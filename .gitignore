@@ -1,0 +1,40 @@
+# Git folder
+/.git/
+
+# IDE - Eclipse files
+.buildpath
+.classpath
+.launch
+.loadpath
+.metadata
+.project
+.settings/
+bin/**
+
+# IDE - IntelliJ Idea files
+.idea
+*.iml
+
+# IDE - VSCode
+.vscode/*
+.history/*
+
+# Windows files
+Thumbs.db
+Desktop.ini
+
+# OS files
+.DS_Store
+.svn
+._*
+.Spotlight-V100
+.Trashes
+
+# Node
+/node_modules/
+*.tgz
+*.tar
+
+# Compilation folders
+/output/
+/target/
