@@ -32,17 +32,6 @@ After this the index file is ready at:
 
 There is an [online demo site][demo-site] which always reflects the current contents of the master branch, which is the latest version of the template.
 
-### Projects based on this template
-
-A few projects have been created based on this template, meant to ease documenting projects:
-
-- [Docs Maven Skin][docs-maven-skin], adapts the template for [Maven Site][maven-site].
-- [Sphinx Docs Theme][sphinx-docs-theme], adapts the template for [Sphinx][sphinx].
-
-### Remote Deployment
-
-Any change to the master branch triggers an automatic deployment to the remote server. The CI procedures take care of this.
-
 ## Collaborate
 
 Any kind of help with the project will be well received, and there are two main ways to give such help:
