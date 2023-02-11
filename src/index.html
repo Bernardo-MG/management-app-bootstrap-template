@@ -45,14 +45,40 @@
       <header>
          <nav id="navbar-main" class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
-               <a class="navbar-brand" href="./index.html">Bootstrap Components Template</a>
+               <a class="navbar-brand" href="./index.html">Bootstrap Management App Template</a>
                <small class="navbar-text d-none d-md-block"><span id="navbar-version">v1.0.0</span> (<time
                      id="navbar-date">2023-02-02</time>)</small>
                <div class="col-sm d-none d-md-block">
-                  <a href="https://github.com/Bernardo-MG/management-app-bootstrap-template" title="GitHub" aria-label="GitHub"><span
-                        class="fab fa-github ps-1" aria-hidden="true"></span><span class="d-none d-sm-block d-md-none">
+                  <a href="https://github.com/Bernardo-MG/management-app-bootstrap-template" title="GitHub"
+                     aria-label="GitHub"><span class="fa-brands fa-github ps-1" aria-hidden="true"></span><span
+                        class="d-none d-sm-block d-md-none">
                         Github</span></a>
                </div>
+               <a href="#" class="nav-link dropdown-toggle" id="menuDropdown" data-bs-toggle="dropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fa-solid fa-circle-user"></i>
+               </a>
+               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuDropdown">
+                  <li>
+                     <div class="d-flex justify-content-center">Username</div>
+                  </li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                     <div class="d-flex justify-content-center">
+                        <i class="fa-solid fa-gear"></i>Settings
+                     </div>
+                  </li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                     <div class="d-flex justify-content-center">
+                        <i class="fa-solid fa-right-from-bracket"></i>Logout
+                     </div>
+                  </li>
+               </ul>
             </div>
          </nav>
       </header>
@@ -138,7 +164,7 @@
             </div>
          </div>
          <div id="footer-info" class="bg-light ps-2 pb-1 w-100">
-            <div><span class="far fa-copyright"></span>2015-2022 <a id="author-link"
+            <div><span class="fa-regular fa-copyright"></span>2015-2022 <a id="author-link"
                   href="https://github.com/Bernardo-MG">Bernardo
                   Martínez Garrido</a> - <a id="license-link" href="http://www.opensource.org/licenses/mit-license.php">MIT
                   License</a>
