@@ -33,7 +33,7 @@
          content="Check the demo for the Bootstrap Template Example for a Management App">
 
       <!-- CSS -->
-      <link rel="stylesheet" href="./static/lib/bootswatch/litera/bootstrap.min.css">
+      <link rel="stylesheet" href="./static/lib/bootswatch/lux/bootstrap.min.css">
       <link rel="stylesheet" href="./static/lib/font-awesome/fontawesome-free/css/all.min.css">
       <link rel="stylesheet" href="./static/lib/highlight/styles/default.css">
       <!-- Docs Template style -->
@@ -43,70 +43,60 @@
 
    <body class="d-flex flex-column">
       <header>
-         <nav id="navbar-main" class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+         <nav id="navbar-main" class="navbar navbar-expand-md navbar-light sticky-top bg-light flex-md-nowrap p-0 shadow">
             <div class="container-fluid">
                <a class="navbar-brand" href="./index.html">Bootstrap Management App Template</a>
-               <small class="navbar-text d-none d-md-block"><span id="navbar-version">v1.0.0</span> (<time
-                     id="navbar-date">2023-02-02</time>)</small>
                <div class="col-sm d-none d-md-block">
-                  <a href="https://github.com/Bernardo-MG/management-app-bootstrap-template" title="GitHub"
-                     aria-label="GitHub"><span class="fa-brands fa-github ps-1" aria-hidden="true"></span><span
+                  <a href="https://github.com/Bernardo-MG/management-app-bootstrap-template" class="ps-2" title="GitHub"
+                     aria-label="GitHub"><span class="fa-brands fa-github" aria-hidden="true"></span><span
                         class="d-none d-sm-block d-md-none">
                         Github</span></a>
                </div>
-               <div class="dropdown-center">
-                  <button class="btn btn-default dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                     <i class="fa-solid fa-circle-user"><span class="d-none d-sm-block d-md-none">
-                        User</span></i>
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                     <li>
-                        <div class="d-flex justify-content-center"><b>Username</b></div>
-                     </li>
-                     <li>
-                        <hr class="dropdown-divider">
-                     </li>
-                     <li>
-                        <a href="#" class="dropdown-item" title="Settings" aria-label="Settings">Settings</a>
-                     </li>
-                     <li>
-                        <hr class="dropdown-divider">
-                     </li>
-                     <li>
-                        <a href="#" class="dropdown-item" title="Logout" aria-label="Logout">Logout</a>
+               <div class="collapse navbar-collapse" id="navbar-main-menu">
+                  <ul class="nav navbar-nav ms-auto">
+                     <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="examplesDropdown" data-bs-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                           <i class="fa-regular fa-circle-user"><span class="d-none d-sm-block d-md-none">
+                                 User</span></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="examplesDropdown">
+                           <li>
+                              <div class="d-flex justify-content-center"><b>Username</b></div>
+                           </li>
+                           <li>
+                              <hr class="dropdown-divider">
+                           </li>
+                           <li>
+                              <a href="#" class="dropdown-item" title="Settings" aria-label="Settings">Settings</a>
+                           </li>
+                           <li>
+                              <hr class="dropdown-divider">
+                           </li>
+                           <li>
+                              <a href="#" class="dropdown-item" title="Logout" aria-label="Logout">Logout</a>
+                           </li>
+                        </ul>
                      </li>
                   </ul>
                </div>
-            </div>
          </nav>
       </header>
       <main>
          <div class="container-fluid">
             <div class="row">
-               <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" id="sidebarMenu">
+               <nav class="col-md-3 col-lg-2 d-md-block navbar-light bg-light sidebar collapse" id="sidebarMenu">
                   <div class="position-sticky pt-3 sidebar-sticky">
                      <p class="sidebar-heading d-flex justify-content-between align-items-center px-3 mb-1 text-muted text-uppercase">admin</p>
                      <ul class="nav flex-column">
                         <li class="nav-item">
-                           <a href="#" class="nav-link" title="admin">fees</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#" class="nav-link" title="balance">balance</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#" class="nav-link" title="members">members</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#" class="nav-link" title="transactions">transactions</a>
+                           <a href="#" class="nav-link" title="admin">Clients</a>
                         </li>
                      </ul>
                      <p class="sidebar-heading d-flex justify-content-between align-items-center px-3 mb-1 text-muted text-uppercase">security</p>
                      <ul class="nav flex-column">
                         <li class="nav-item">
-                           <a href="#" class="nav-link" title="roles">roles</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#" class="nav-link" title="users">users</a>
+                           <a href="#" class="nav-link" title="users">Users</a>
                         </li>
                      </ul>
                   </div>
