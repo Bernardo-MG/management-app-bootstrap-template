@@ -46,7 +46,11 @@
          <nav id="navbar-main" class="navbar navbar-expand-md navbar-light sticky-top bg-light flex-md-nowrap p-0 shadow">
             <div class="container-fluid">
                <a class="navbar-brand" href="./index.html">Bootstrap Management App Template</a>
-               <div class="col-sm d-none d-md-block">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main-menu"
+                  aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div id="navbar-icons" class="col-sm d-none d-md-block">
                   <a href="https://github.com/Bernardo-MG/management-app-bootstrap-template" class="ps-2" title="GitHub"
                      aria-label="GitHub"><span class="fa-brands fa-github" aria-hidden="true"></span><span
                         class="d-none d-sm-block d-md-none">
@@ -57,8 +61,7 @@
                      <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="examplesDropdown" data-bs-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                           <i class="fa-regular fa-circle-user"><span class="d-none d-sm-block d-md-none">
-                                 User</span></i>
+                           <i class="fa-regular fa-circle-user"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="examplesDropdown">
                            <li>
@@ -80,6 +83,7 @@
                      </li>
                   </ul>
                </div>
+            </div>
          </nav>
       </header>
       <main>
