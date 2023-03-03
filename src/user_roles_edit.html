@@ -113,40 +113,66 @@
                      </header>
                      <ul class="nav nav-tabs">
                         <li class="nav-item">
-                           <a class="nav-link active" aria-current="page" href="#">Info</a>
+                           <a class="nav-link" href="./users_edit.html">Info</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="./user_roles_edit.html">Roles</a>
+                           <a class="nav-link active" aria-current="page" href="#">Roles</a>
                         </li>
                      </ul>
                      <section>
                         <div class="col-md-6 offset-md-3 py-md-4">
-                           <form class="needs-validation" novalidate>
-                              <div class="mb-3 row">
-                                 <label for="nameInput" class="col-sm-2 col-form-label">Name</label>
-                                 <div class="col-sm-10">
-                                    <input value="Name" type="text" id="nameInput" class="form-control">
-                                 </div>
-                              </div>
-                              <div class="mb-3 row">
-                                 <label for="surnameInput" class="col-sm-2 col-form-label">Surname</label>
-                                 <div class="col-sm-10">
-                                    <input value="Surname" type="text" id="surnameInput" class="form-control">
-                                 </div>
-                              </div>
-                              <div class="mb-3 offset-md-2">
-                                 <input class="form-check-input" type="checkbox" value="" id="activeCheck">
-                                 <label for="activeCheck" class="form-check-label">
-                                    Active
-                                 </label>
-                              </div>
-                              <!-- Save button -->
-                              <div class="d-grid gap-2">
-                                 <button type="submit" class="btn btn-primary" aria-label="Login">Save</button>
-                              </div>
-                           </form>
+                           <table class="table">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">
+                                       <button type="button" class="btn btn-default" aria-label="Edit">
+                                          <i class="fa-solid fa-sort"></i>
+                                       </button>Name
+                                    </th>
+                                    <th scope="col"></th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>Role 1</td>
+                                    <td>
+                                       <button type="button" class="btn btn-default" aria-label="Delete" data-bs-toggle="modal"
+                                          data-bs-target="#deleteModal">
+                                          <i class="fa-solid fa-trash-can"></i>
+                                       </button>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>Role 2</td>
+                                    <td>
+                                       <button type="button" class="btn btn-default" aria-label="Delete" data-bs-toggle="modal"
+                                          data-bs-target="#deleteModal">
+                                          <i class="fa-solid fa-trash-can"></i>
+                                       </button>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <div class="d-grid gap-2">
+                              <button type="button" class="btn btn-primary" aria-label="Login">Add</button>
+                           </div>
                         </div>
                      </section>
+                     <div id="deleteModal" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                           <div class="modal-content">
+                              <div class="modal-body">
+                                 <p>Are you sure you want to delete the data?</p>
+                                 <p class="text-warning"><small>This action cannot be undone.</small></p>
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancel</button>
+                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">delete</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </section>
                </div>
                </div>
