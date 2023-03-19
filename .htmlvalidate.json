@@ -6,6 +6,7 @@
   
     "rules": {
       "close-order": "error",
-      "require-sri": "warn"
+      "prefer-native-element": "warn",
+      "require-sri": "off"
     }
   }
