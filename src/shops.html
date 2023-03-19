@@ -115,56 +115,57 @@
                <div class="col-md-9 col-lg-10">
                   <section id="main-section" class="container flex-grow-1 pt-4 mb-1">
                      <header class="pb-2 mb-2 border-bottom">
-                        <h1>Bootstrap Template Example for a Management App</h1>
+                        <h1>Shops</h1>
                      </header>
-                     <p>Making use of the latest features of Bootstrap and HTML5, this template aims to give a modern and
-                        responsive
-                        web design with a small example.
-                     </p>
-                     <p>Any kind of project can take advantage of this template, as it is meant to be generic and reusable.
-                        Just
-                        adapt it for whatever framework you are using.
-                     </p>
-                     <section id="features">
-                        <h2>Features</h2>
-                        <ul>
-                           <li>Simple style, avoiding unnecessary complexities.</li>
-                           <li>HTML5 semantic markup.</li>
-                           <li>Semantic tags for <a href="http://ogp.me/">Facebook OpenGraph</a> and
-                              <a href="https://dev.twitter.com/cards/overview">Twitter Cards</a>.
-                           </li>
-                           <li>Responsive design with <a href="http://getbootstrap.com/">Bootstrap 5</a>.
-                           </li>
-                           <li><a href="https://fontawesome.com/">Font Awesome</a> icons.</li>
-                           <li>Validated for HTML 5, following the <a href="https://validator.w3.org/">W3C guidelines</a>.
-                           </li>
-                           <li>Validated for accessibility, following the <a href="http://achecker.ca/checker/index.php">WCAG
-                                 2.0</a> (Level AA) guidelines, and also checked with <a
-                                 href="http://wave.webaim.org/">Wave</a>.
-                           </li>
-                           <li>Additionally it is being continuously validated with other tools through <a
-                                 href="https://github.com/Bernardo-MG/management-app-bootstrap-template/actions">Github
-                                 Workflow
-                                 CI</a>.
-                           </li>
-                        </ul>
+                     <section>
+                        <div class="offset-3 col-6">
+                           <div class="list-group">
+                              <a href="#" class="list-group-item list-group-item-action">Shop 1</a>
+                              <a href="#" class="list-group-item list-group-item-action">Shop 2</a>
+                              <a href="#" class="list-group-item list-group-item-action">Shop 3</a>
+                              <a href="#" class="list-group-item list-group-item-action">Shop 4</a>
+                              <a href="#" class="list-group-item list-group-item-action">Shop 5</a>
+                           </div>
+                        </div>
+                        <div class="position-relative mt-1">
+                           <div class="position-absolute top-0 start-50 translate-middle-x">
+                              <nav aria-label="Page navigation">
+                                 <ul class="pagination pagination-sm">
+                                    <li class="page-item disabled" aria-disabled="true">
+                                       <button type="button" class="page-link" aria-label="Previous page">
+                                          <i class="fa-solid fa-backward"></i>
+                                       </button>
+                                    </li>
+                                    <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+                                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                    <li class="page-item">
+                                       <button type="button" class="page-link" aria-label="Next page">
+                                          <i class="fa-solid fa-forward"></i>
+                                       </button>
+                                    </li>
+                                 </ul>
+                              </nav>
+                           </div>
+                        </div>
                      </section>
-                     <section id="usage">
-                        <h2>Usage</h2>
-                        <p>Just grab the template from <a
-                              href="https://github.com/Bernardo-MG/management-app-bootstrap-template"
-                              title="Bootstrap Template Example for a Management App GitHub Page"
-                              aria-label="Bootstrap Template Example for a Management App GitHub Page">Docs
-                              Bootstrap Template GitHub Page</a> and adapt the html
-                           files for your preferred templating engine.
-                        </p>
-                        <p>All the static files, which are required for the template, are stored in the static folder.</p>
-                        <p>If you want to change the Bootstrap configuration, a config.json file is included in the
-                           Bootstrap folder. This can be used on the <a href="http://getbootstrap.com/customize/"
-                              title="Bootstrap Customize" aria-label="Bootstrap Customize">
-                              Bootstrap Customize</a> page to change said configuration.
-                        </p>
-                     </section>
+                     <div id="deleteModal" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                           <div class="modal-content">
+                              <div class="modal-body">
+                                 <p>Are you sure you want to delete the data?</p>
+                                 <p class="text-warning"><small>This action cannot be undone.</small></p>
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancel</button>
+                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">delete</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </section>
                </div>
             </div>
