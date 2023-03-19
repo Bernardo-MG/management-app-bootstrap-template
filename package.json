@@ -24,7 +24,6 @@
       "copy-popperjs": "copyfiles -u 5 \"./node_modules/@popperjs/core/dist/umd/popper.min.js\" ./target/static/lib/popperjs",
       "copy-fontawesome": "copyfiles -u 2 \"./node_modules/@fortawesome/fontawesome-free/**/*\" ./target/static/lib/font-awesome",
       "build": "npm run copy-sources && npm run copy-bootstrap && npm run copy-bootswatch && npm run copy-popperjs && npm run copy-fontawesome",
-      "validate-css": "csslint ./target/static/css/",
       "validate-html": "html-validate ./target/*.html"
    },
    "devDependencies": {
