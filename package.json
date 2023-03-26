@@ -19,10 +19,10 @@
    },
    "scripts": {
       "copy-sources": "copyfiles -u 1 \"./src/**/*\" ./target",
-      "copy-bootstrap": "copyfiles -u 4 \"./node_modules/bootstrap/dist/js/*.js\" ./target/static/lib/bootstrap/js",
-      "copy-bootswatch": "copyfiles -u 4 \"./node_modules/bootswatch/dist/materia/*.css\" ./target/static/lib/bootswatch/materia",
+      "copy-bootstrap": "copyfiles -u 4 \"./node_modules/bootstrap/dist/js/bootstrap.min.js\" ./target/static/lib/bootstrap/js",
+      "copy-bootswatch": "copyfiles -u 4 \"./node_modules/bootswatch/dist/materia/bootstrap.min.css\" ./target/static/lib/bootswatch/materia",
       "copy-popperjs": "copyfiles -u 5 \"./node_modules/@popperjs/core/dist/umd/popper.min.js\" ./target/static/lib/popperjs",
-      "copy-fontawesome": "copyfiles -u 2 \"./node_modules/@fortawesome/fontawesome-free/**/*\" ./target/static/lib/font-awesome",
+      "copy-fontawesome": "copyfiles -u 2 \"./node_modules/@fortawesome/fontawesome-free/css/all.min.css\" ./target/static/lib/font-awesome",
       "build": "npm run copy-sources && npm run copy-bootstrap && npm run copy-bootswatch && npm run copy-popperjs && npm run copy-fontawesome",
       "validate-html": "html-validate ./target/*.html"
    },
