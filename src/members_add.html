@@ -90,72 +90,67 @@
                <div class="col-md-3 col-lg-2">
                   <nav class="bg-light rounded border mt-2" id="sidebarMenu">
                      <p class="px-3 mt-3 mb-1 fw-bold text-uppercase border-bottom">
-                        Info</p>
+                        Stats</p>
                      <ul class="nav flex-column">
                         <li class="nav-item">
-                           <a href="./shops.html" class="nav-link" title="admin">Shops</a>
+                           <a href="./balance.html" class="nav-link" title="admin">Balance</a>
                         </li>
                      </ul>
                      <p class="px-3 mt-3 mb-1 fw-bold text-uppercase border-bottom">
                         Admin</p>
                      <ul class="nav flex-column">
                         <li class="nav-item">
-                           <a href="./employees.html" class="nav-link" title="admin">Employees</a>
-                        </li>
-                     </ul>
-                     <p class="px-3 mt-3 mb-1 fw-bold text-uppercase border-bottom">
-                        Security</p>
-                     <ul class="nav flex-column">
-                        <li class="nav-item">
-                           <a href="./users.html" class="nav-link" title="users">Users</a>
+                           <a href="./members.html" class="nav-link" title="admin">Members</a>
+                           <a href="./fees.html" class="nav-link" title="admin">Fees</a>
+                           <a href="./fees.html" class="nav-link" title="admin">Transactions</a>
                         </li>
                      </ul>
                   </nav>
                </div>
                <div class="col-md-9 col-lg-10">
                   <section id="main-section" class="container flex-grow-1 pt-4 mb-1">
-                     <header class="pb-2 mb-2 border-bottom">
-                        <h1>Edit user</h1>
+                     <header>
+                        <h1 class="border-bottom">Add member</h1>
                      </header>
-                     <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                           <a class="nav-link active" aria-current="page" href="#">Info</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="./user_roles_edit.html">Roles</a>
-                        </li>
-                     </ul>
                      <section>
                         <div class="col-md-6 offset-md-3 py-md-4">
-                           <form class="needs-validation" novalidate>
-                              <div class="mb-3 row">
-                                 <label for="nameInput" class="col-sm-2 col-form-label">Name</label>
-                                 <div class="col-sm-10">
-                                    <input value="Name" type="text" id="nameInput" class="form-control">
+                           <section>
+                              <div class="card">
+                                 <div class="card-body">
+                                    <form class="needs-validation" novalidate>
+                                       <div class="mb-3 row">
+                                          <label for="nameInput" class="col-sm-2 col-form-label">Name</label>
+                                          <div class="col-sm-10">
+                                             <input type="text" id="nameInput" class="form-control">
+                                          </div>
+                                       </div>
+                                       <div class="mb-3 row">
+                                          <label for="surnameInput" class="col-sm-2 col-form-label">Surname</label>
+                                          <div class="col-sm-10">
+                                             <input type="text" id="surnameInput" class="form-control">
+                                          </div>
+                                       </div>
+                                       <div class="mb-3 offset-md-2">
+                                          <input class="form-check-input" type="checkbox" value="" id="activeCheck">
+                                          <label for="activeCheck" class="form-check-label">
+                                             Active
+                                          </label>
+                                       </div>
+                                       <div class="row">
+                                          <!-- Save button -->
+                                          <div class="col-sm-2 d-grid gap-2">
+                                             <button type="submit" class="btn btn-primary" aria-label="Login">Save</button>
+                                          </div>
+                                       </div>
+                                    </form>
                                  </div>
                               </div>
-                              <div class="mb-3 row">
-                                 <label for="surnameInput" class="col-sm-2 col-form-label">Surname</label>
-                                 <div class="col-sm-10">
-                                    <input value="Surname" type="text" id="surnameInput" class="form-control">
-                                 </div>
-                              </div>
-                              <div class="mb-3 offset-md-2">
-                                 <input class="form-check-input" type="checkbox" value="" id="activeCheck">
-                                 <label for="activeCheck" class="form-check-label">
-                                    Active
-                                 </label>
-                              </div>
-                              <!-- Save button -->
-                              <div class="d-grid gap-2">
-                                 <button type="submit" class="btn btn-primary" aria-label="Login">Save</button>
-                              </div>
-                           </form>
+                           </section>
                         </div>
                      </section>
                   </section>
                </div>
-               </div>
+            </div>
          </div>
       </main>
       <script src="./static/lib/popperjs/popper.min.js"></script>

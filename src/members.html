@@ -90,77 +90,106 @@
                <div class="col-md-3 col-lg-2">
                   <nav class="bg-light rounded border mt-2" id="sidebarMenu">
                      <p class="px-3 mt-3 mb-1 fw-bold text-uppercase border-bottom">
-                        Info</p>
+                        Stats</p>
                      <ul class="nav flex-column">
                         <li class="nav-item">
-                           <a href="./shops.html" class="nav-link" title="admin">Shops</a>
+                           <a href="./balance.html" class="nav-link" title="admin">Balance</a>
                         </li>
                      </ul>
                      <p class="px-3 mt-3 mb-1 fw-bold text-uppercase border-bottom">
                         Admin</p>
                      <ul class="nav flex-column">
                         <li class="nav-item">
-                           <a href="./employees.html" class="nav-link" title="admin">Employees</a>
-                        </li>
-                     </ul>
-                     <p class="px-3 mt-3 mb-1 fw-bold text-uppercase border-bottom">
-                        Security</p>
-                     <ul class="nav flex-column">
-                        <li class="nav-item">
-                           <a href="./users.html" class="nav-link" title="users">Users</a>
+                           <a href="./members.html" class="nav-link" title="admin">Members</a>
+                           <a href="./fees.html" class="nav-link" title="admin">Fees</a>
+                           <a href="./fees.html" class="nav-link" title="admin">Transactions</a>
                         </li>
                      </ul>
                   </nav>
                </div>
                <div class="col-md-9 col-lg-10">
                   <section id="main-section" class="container flex-grow-1 pt-4 mb-1">
-                     <header class="pb-2 mb-2 border-bottom">
-                        <h1>Edit user</h1>
+                     <header>
+                        <h1 class="border-bottom">Members</h1>
                      </header>
-                     <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                           <a class="nav-link" href="./users_edit.html">Info</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link active" aria-current="page" href="#">Roles</a>
-                        </li>
-                     </ul>
                      <section>
-                        <div class="col-md-6 offset-md-3 py-md-4">
-                           <table class="table">
-                              <thead>
-                                 <tr>
-                                    <th scope="col">
-                                       <button type="button" class="btn btn-link link-dark" aria-label="Edit">
-                                          <i class="fa-solid fa-sort"></i>
-                                       </button>Name
-                                    </th>
-                                    <th scope="col"></th>
-                                 </tr>
-                              </thead>
-                              <tbody>
-                                 <tr>
-                                    <td>Role 1</td>
-                                    <td>
-                                       <button type="button" class="btn btn-link link-dark" aria-label="Delete" data-bs-toggle="modal"
-                                          data-bs-target="#deleteModal">
-                                          <i class="fa-solid fa-trash-can"></i>
-                                       </button>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>Role 2</td>
-                                    <td>
-                                       <button type="button" class="btn btn-link link-dark" aria-label="Delete" data-bs-toggle="modal"
-                                          data-bs-target="#deleteModal">
-                                          <i class="fa-solid fa-trash-can"></i>
-                                       </button>
-                                    </td>
-                                 </tr>
-                              </tbody>
-                           </table>
-                           <div class="d-grid gap-2">
-                              <button type="button" class="btn btn-primary" aria-label="Login">Add</button>
+                        <div class="card">
+                           <div class="card-header">
+                              <a class="btn btn-link link-dark" href="./members_add.html" role="button"><i class="fa-solid fa-circle-plus"></i></a>
+                           </div>
+                           <div class="card-body">
+                              <table class="table table-hover">
+                                 <thead>
+                                    <tr>
+                                       <th scope="col">
+                                          <button type="button" class="btn btn-link link-dark" aria-label="Edit">
+                                             <i class="fa-solid fa-sort"></i>
+                                          </button>Name
+                                       </th>
+                                       <th scope="col">
+                                          <button type="button" class="btn btn-link link-dark" aria-label="Edit">
+                                             <i class="fa-solid fa-sort"></i>
+                                          </button>Surname
+                                       </th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr role="button" onclick="window.location='./members_edit.html'">
+                                       <td>User 1</td>
+                                       <td>Surname 1</td>
+                                    </tr>
+                                    <tr role="button" onclick="window.location='./members_edit.html'">
+                                       <td>User 2</td>
+                                       <td>Surname 2</td>
+                                    </tr>
+                                    <tr role="button" onclick="window.location='./members_edit.html'">
+                                       <td>User 3</td>
+                                       <td>Surname 3</td>
+                                    </tr>
+                                    <tr role="button" onclick="window.location='./members_edit.html'">
+                                       <td>User 4</td>
+                                       <td>Surname 4</td>
+                                    </tr>
+                                    <tr role="button" onclick="window.location='./members_edit.html'">
+                                       <td>User 5</td>
+                                       <td>Surname 5</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                           <div class="card-footer">
+                              <div class="d-flex justify-content-center mt-1">
+                                 <nav aria-label="Page navigation">
+                                    <ul class="pagination pagination-sm">
+                                       <li class="page-item disabled" aria-disabled="true">
+                                          <button type="button" class="page-link" aria-label="First page">
+                                             <i class="fa-solid fa-angles-left"></i>
+                                          </button>
+                                       </li>
+                                       <li class="page-item disabled" aria-disabled="true">
+                                          <button type="button" class="page-link" aria-label="Previous page">
+                                             <i class="fa-solid fa-chevron-left"></i>
+                                          </button>
+                                       </li>
+                                       <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                                       <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                       <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                       <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+                                       <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                       <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                       <li class="page-item">
+                                          <button type="button" class="page-link" aria-label="Next page">
+                                             <i class="fa-solid fa-chevron-right"></i>
+                                          </button>
+                                       </li>
+                                       <li class="page-item">
+                                          <button type="button" class="page-link" aria-label="Last page">
+                                             <i class="fa-solid fa-angles-right"></i>
+                                          </button>
+                                       </li>
+                                    </ul>
+                                 </nav>
+                              </div>
                            </div>
                         </div>
                      </section>
@@ -181,7 +210,7 @@
                      </div>
                   </section>
                </div>
-               </div>
+            </div>
          </div>
       </main>
       <script src="./static/lib/popperjs/popper.min.js"></script>
