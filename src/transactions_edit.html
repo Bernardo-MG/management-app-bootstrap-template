@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>Index - Bootstrap Template Example for a Management App</title>
+      <link href="./static/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+      <!-- Metadata -->
+      <meta name="description" content="Bootstrap Template Example for a Management App Demo">
+      <meta name="keywords" content="Bootstrap, template, documentation">
+      <meta name="author" content="Bernardo Martínez Garrido">
+
+      <!-- Linking Metadata -->
+      <link rel="canonical" href="http://docs.bernardomg.com/management-app-bootstrap-template/">
+
+      <!-- Facebook OpenGraph -->
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="./static/favicon.ico">
+      <meta property="og:url" content="http://docs.bernardomg.com/management-app-bootstrap-template/">
+      <meta property="og:site_name" content="Bootstrap Template Example for a Management App">
+      <meta property="og:title" content="Index - Bootstrap Template Example for a Management App">
+      <meta property="og:description"
+         content="Check the demo for the Bootstrap Template Example for a Management App">
+
+      <!-- Twitter Card -->
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:creator" content="@BernardoMartG">
+      <meta name="twitter:title" content="Bootstrap Template Example for a Management App Demo">
+      <meta name="twitter:description"
+         content="Check the demo for the Bootstrap Template Example for a Management App">
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="./static/lib/bootswatch/materia/bootstrap.min.css">
+      <link rel="stylesheet" href="./static/lib/font-awesome/fontawesome-free/css/all.min.css">
+
+   </head>
+
+   <body class="d-flex flex-column">
+      <header>
+         <nav id="navbar-main" class="navbar navbar-expand-md navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="./index.html">Bootstrap Management App Template</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main-menu"
+                  aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div id="navbar-icons" class="col-sm d-none d-md-block">
+                  <a href="https://github.com/Bernardo-MG/management-app-bootstrap-template" class="link-secondary ps-2" title="GitHub"
+                     aria-label="GitHub"><span class="fa-brands fa-github" aria-hidden="true"></span><span
+                        class="d-none d-sm-block d-md-none">
+                        Github</span></a>
+               </div>
+               <div class="collapse navbar-collapse" id="navbar-main-menu">
+                  <ul class="nav navbar-nav ms-auto">
+                     <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="examplesDropdown" data-bs-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                           <i class="fa-regular fa-circle-user"></i>
+                           <span class="d-none">User</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="examplesDropdown">
+                           <li>
+                              <div class="d-flex justify-content-center"><b>Username</b></div>
+                           </li>
+                           <li>
+                              <hr class="dropdown-divider">
+                           </li>
+                           <li>
+                              <a href="#" class="dropdown-item" title="Settings" aria-label="Settings">Settings</a>
+                           </li>
+                           <li>
+                              <hr class="dropdown-divider">
+                           </li>
+                           <li>
+                              <a href="#" class="dropdown-item" title="Logout" aria-label="Logout">Logout</a>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-3 col-lg-2">
+                  <nav class="bg-light rounded border mt-2" id="sidebarMenu">
+                     <p class="px-3 mt-3 mb-1 fw-bold text-uppercase border-bottom">
+                        Stats</p>
+                     <ul class="nav flex-column">
+                        <li class="nav-item">
+                           <a href="./balance.html" class="nav-link" title="admin">Balance</a>
+                        </li>
+                     </ul>
+                     <p class="px-3 mt-3 mb-1 fw-bold text-uppercase border-bottom">
+                        Admin</p>
+                     <ul class="nav flex-column">
+                        <li class="nav-item">
+                           <a href="./members.html" class="nav-link" title="admin">Members</a>
+                           <a href="./fees.html" class="nav-link" title="admin">Fees</a>
+                           <a href="./fees.html" class="nav-link" title="admin">Transactions</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="col-md-9 col-lg-10">
+                  <section id="main-section" class="container flex-grow-1 pt-4 mb-1">
+                     <header>
+                        <h1 class="border-bottom">Edit transaction</h1>
+                     </header>
+                     <section>
+                        <div class="col-md-6 offset-md-3 py-md-4">
+                           <section>
+                              <div class="card">
+                                 <div class="card-body">
+                                    <form class="needs-validation" novalidate>
+                                       <div class="mb-3 row">
+                                          <label for="nameInput" class="col-sm-2 col-form-label">Name</label>
+                                          <div class="col-sm-10">
+                                             <input type="text" id="nameInput" class="form-control">
+                                          </div>
+                                       </div>
+                                       <div class="mb-3 row">
+                                          <label for="surnameInput" class="col-sm-2 col-form-label">Surname</label>
+                                          <div class="col-sm-10">
+                                             <input type="text" id="surnameInput" class="form-control">
+                                          </div>
+                                       </div>
+                                       <div class="mb-3 offset-md-2">
+                                          <input class="form-check-input" type="checkbox" value="" id="activeCheck">
+                                          <label for="activeCheck" class="form-check-label">
+                                             Active
+                                          </label>
+                                       </div>
+                                       <div class="row">
+                                          <!-- Save button -->
+                                          <div class="col-sm-2 d-grid gap-2">
+                                             <button type="submit" class="btn btn-primary" aria-label="Login">Save</button>
+                                          </div>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </section>
+                        </div>
+                     </section>
+                  </section>
+               </div>
+            </div>
+         </div>
+      </main>
+      <script src="./static/lib/popperjs/popper.min.js"></script>
+      <script src="./static/lib/bootstrap/js/bootstrap.min.js"></script>
+   </body>
+
+</html>
